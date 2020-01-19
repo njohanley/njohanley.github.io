@@ -1,0 +1,747 @@
+/* CSS reference page */
+
+/*style form from heading*/
+
+/*Nick O'Hanley's First Block on Home Page for images */
+    
+/*----------------------------------------------Nick O'Hanley's Css - Home Page Original CSS -------------------------------------------------*/
+
+.responsive {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.backgroundimg {
+  width: 100%;
+  max-width: 2000px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+  
+.title{
+background-color: #4A675A;
+padding:7px;
+  text-align:center;
+  font-family:Helvetica;
+  font-size: large;
+  color:white;
+}
+
+.about-content {padding-top: 100px;
+font-size: 12px;
+font-family: Helvetica;
+color:black;
+background-color:#e5e5e5;
+padding:15px;
+text-align:center;
+}    
+
+
+
+/* Originally taken from W3 schools - meet the team but modified to suit my needs and add a column */
+
+
+.column {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  /* height: 300px; */
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+
+.gridMain{
+	/*from W3Schools https://www.w3schools.com/css/css_grid_container.asp */
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	justify-content: space-evenly;
+	
+}
+
+
+
+/*  Navigation bar - Brooke's section  */
+
+/* background color for navbar  */
+.navbar, .topnav {
+	background-color: #4A675A;
+	overflow: hidden;
+}
+  
+  /* Style for navbar links */
+.navbar a, .topnav a {
+	float: left;
+	display: block;
+	color: whitesmoke;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 16px;
+}
+  
+  /* active class highlights current page */
+.active {
+	background-color:rgb(159, 170, 145);
+	color: whitesmoke;
+}
+  
+  /* Hide the link that opens & closes the nav bar on small screens */
+.navbar .icon, .topnav .icon {
+	display: none;
+}
+  
+  /* Dropdown container - positions dropdown content */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+  
+  /* Style for dropdown button  */
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: whitesmoke;
+	padding: 15px;
+	background-color: inherit;
+	margin: 0;
+	font-size: inherit;
+	min-width: 120px;
+}
+  
+  /* Style for dropdown content & hide it */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgb(159, 170, 145);
+	min-width: 110px;
+	z-index: 1;
+}
+  
+  /* Style for links inside dropdown */
+.dropdown-content a {
+	float: none;
+	color: whitesmoke;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-size: inherit;
+}
+  
+/* Add a background color to nav bar links & dropdown button on hover */
+.navbar a:hover, .topnav a:hover, .dropdown:hover .dropbtn {
+	background-color:  rgb(159, 170, 145);
+	color: whitesmoke;
+}
+  
+/* background for dropdownlinks on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+	color: black;
+}
+  
+/* show dropdown-content on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+  
+/* responsive design - hide links when screen width is less than 600px, only show Home & link to open/close the rest of the links */
+/* source:  https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
+  @media screen and (max-width: 600px) {
+	.navbar a:not(:first-child), .dropdown .dropbtn {
+		display: none;
+}
+	
+.navbar a.icon {
+	  float: right;
+	  display: block;
+	}
+}
+  
+  /* responsive design - added to the navbar with JavaScript - when icon is clicked, displays vertically */
+@media screen and (max-width: 600px) {
+	.navbar.responsive {position: relative;}
+	.navbar.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+}
+
+.navbar.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+}
+	
+.navbar.responsive .dropdown {float: none;}
+.navbar.responsive .dropdown-content {position: relative;}
+.navbar.responsive .dropdown .dropbtn {
+	display: block;
+	width: 100%;
+	text-align: left;
+	}
+}
+
+  /* ----------------  section ends ----------------- */
+
+
+/*style form from heading*/
+/* W3Schools https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query3 */
+
+
+/*-------------------------------------
+        4.  About. Copied from Browny script https://onepagelove.com/browny
+--------------------------------------*/
+
+.about {padding: 50px 0 100px;}
+
+.section-heading{
+    color:#636a82;
+	text-transform: uppercase;
+	text-align: center;
+}
+/*.single-about-txt* - Nick OHanley* - Cartographic representations through generalizatons*/
+.single-about-txt h3 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    text-transform: uppercase;	
+    background-color:#e5e5e5;
+	padding:15px;
+	text-align:center;   
+}
+
+.single-about-txt p {
+    text-align: center;
+    font-size: 20px;
+    color: #999fb3;
+    padding: 35px 0 43px;
+    border-bottom: 1px solid #999fb3
+   
+}
+.single-about-add-info {
+    margin: 35px 0;
+}
+.single-about-add-info h3 {
+    color: #636a82;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.single-about-add-info p {
+	font-weight: 300;
+	border: 0;
+	padding: 0;
+	margin-top: 3px;
+}
+/*.single-about-txt*/
+
+/*.single-about-img */
+.single-about-img{
+	position: relative;
+	box-shadow: 0 5px 20px rgba(14,25,80,.30);
+}
+.single-about-img:before {
+    position:  absolute;
+    content: " ";
+    top: 0;
+    left:  0;
+    width: 109%;
+    height:  100%;
+    background: rgba(31,44,108,.3);
+}
+.single-about-img img {
+    max-width: 500px;
+    height: 468px;
+}
+.about-list-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 109%;
+    height: 90px;
+    background: #1f2c6c;
+}
+/*.ab-list-icon */
+.about-list-icon ul {
+    display: flex;
+}
+.about-list-icon  ul li a {
+    padding-right: 22px;
+    cursor:pointer;
+    color: black;
+}
+.about-list-icon ul li a {
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    border: 2px solid;
+    margin-left: 20px;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+}
+.about-list-icon ul li a i {
+    margin-left: 6px;
+}
+/*.ab-list-icon */
+/*--------------------------------------------------------------*/
+
+
+/* ----------------------Surveying Page Layout by katelyn Corrigall-Millins; December 4th, 2019------------------------- */
+
+.surveyhead {padding: 50px 0 100px;}
+
+.survey-text h2 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+	padding:15px;
+	text-align:center;
+}
+    
+.survey-text {
+	font-size: 18px;
+	font-family: Helvetica;
+	color:black;
+	background-color:#e5e5e5;
+	padding:15px;
+	text-align:center;
+}
+.containerpictures {
+	font-size: 18px;
+	font-family: Helvetica;
+	color:black;
+	background-color:#e5e5e5;
+	padding:15px;
+	text-align:center;
+}
+
+/* images for survey part of site By Katelyn Corrigall-Millins; pictures original from the summer; column help by Nick O'hanley */
+.survey-pic column {
+  float: left;
+  width:23%;
+  padding: 8px;
+  height: 350%;
+  padding:15px;
+}
+
+/* Clear floats after image containers */
+.survey-pic row::after {
+  content: "";
+  clear: both;
+  display: inline-block;
+} 
+
+/*---------------------------- contact us page; Katelyn Corrigall-Millins----------------------------------------- */
+/* ---------------- altered design of what was done above, no external sources used aside from html/css validator */
+.contactpictures {
+  font-family: Helvetica;
+  color:black;
+  background-color:#e5e5e5;
+  padding:15px;
+  text-align:center;
+}
+.contact-pic column {
+  padding: 8px;
+  width: 100%;
+  height: 500%;
+  float: right;
+  padding-left: 20px;
+  font-size: 18px;
+  font-family: Helvetica;
+  color:black;
+  background-color:#e5e5e5;
+  padding:15px;
+  text-align:center;
+}
+.contact-pic row::after {
+  content: "";
+  clear: both;
+  display: inline-block;
+} 
+
+/* -----------------------------------------------------------*/
+/* footer section Katelyn Corrigall-Millins; 
+footer mixture from w3schools,
+https://stackoverflow.com/questions/30276950/keep-the-footer-at-the-bottom-with-javascript, 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer
+https://css-tricks.com/couple-takes-sticky-footer/
+https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+*/ 
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+/* picturesurv encompases all the text in the page to ensure the footer stays at the bottom and flexes with pag */
+.picturesurv {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+ font-family: Helvetica;  
+  background-color: #4A675A;
+  color: white;
+  text-align: center; 
+}
+/*--------- footer end---------------------- */
+/*--------- Remote Sensing page layout - Miranda Gilliland ----------*/
+
+.remotePic {
+  max-width: 95%;
+  margin: auto;
+  column-span: none;
+}
+
+.remoteDesc {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.75vw;
+  color:black;
+}
+
+.remoteCol {
+  column-count: 3;
+  column-width: 30vw;
+  margin-bottom: 3%;
+}
+
+.remoteh2 {
+  font-size: 1.25vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+  text-align: center;
+}
+
+.remoteh3 {
+  font-size: 1.05vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.remoteText {
+  display: block;
+  max-width: 85%;
+  max-height: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+	font-size: 0.95vw;
+	font-family: Helvetica, Arial, sans-serif;
+  color:black;
+  border-style: groove;
+  border-width: 3px;
+	border-color:#e5e5e5;
+}
+/*--------- Remote Sensing End ----------*/
+
+
+
+/*--------------- History Page by Miranda Gilliland -------------*/
+
+.histText{
+display: block;
+max-width: 85%;
+max-height: 60%;
+text-align: center;
+margin: auto;
+margin-top: 1%;
+margin-bottom: 1%;
+font-size: 1vw;
+font-family: Helvetica, Arial, sans-serif;
+color:black;
+}
+
+.histBox{
+  margin-bottom: 5%;
+  border-bottom-width: 5px;
+  border-bottom-style: dotted;
+  border-bottom-color: lightgrey;
+  border-top-width: 5px;
+  border-top-style: dotted;
+  border-top-color: lightgrey;
+}
+
+.histQuote{
+  font-size: 1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  margin: 5%;
+}
+
+.histQjust{
+  text-align: right;
+}
+
+.histH2{
+  font-size: 1.25vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.histSource{
+  font-size: 0.75vw;
+}
+
+/*---------- History Page End -----------*/
+
+
+
+/* ---------- what we do > GIS page - by Brooke ----------- */
+
+.GISheader {
+	background-color: lightgrey;
+	margin: 15px 5px;
+	padding: 10px;
+	text-align: center;
+	color: #4A675A;
+}
+
+.GISheader h1 {
+	letter-spacing: 7px;
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.GIScontent {
+	display: block;
+	text-align: left;
+	padding: 10px 0px;
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.GIScontent ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+
+
+/* ------- GIS page section ends ------- */
+
+/* ---- Map Gallery - by Brooke ---- */
+
+.galleryHeader {
+	background-color: lightgray;
+	margin: 15px 5px;
+	padding: 10px;
+}
+
+.galleryHeader h1 {
+	letter-spacing: 6px;
+	text-align: center;
+	font-size: 30px;
+	color: #4A675A;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.galleryWrapper {
+	display: flex;
+	/* flex-direction: column; */
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	overflow: hidden;
+	margin: 5px;
+}
+
+.galleryMaps {
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 5px;
+	margin: 5px;
+} 
+
+.galleryMaps img { 
+	max-width: 100%;
+	height: auto;
+	object-position: 5px 10%;
+}
+
+/* Inspiration  & source:https://codepen.io/sashatran/pen/aJvaEG */ 
+
+.galleryOverlay {
+	opacity: 0;
+	display: flex;
+	background-color:lightgray;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	color: #4A675A;
+	transition: all 0.3s ease;
+	width: 300px;
+	height: 200px;
+}
+
+
+.galleryOverlay p {
+	display: flex;
+	justify-content: center;
+	transition: all 0.3s ease;
+	transform: scale(0.65);
+	flex-direction: column;
+	flex-basis: 80%;
+
+}
+
+.galleryMaps:hover .galleryOverlay {
+	flex: 1;
+	opacity: 0.80;
+	width: 15%;
+	transition: all 0.3s ease;
+	z-index: 1;
+	width: 300px;
+	height: 200px;
+}
+
+/* .galleryMaps p:hover .galleryOverlay p {
+	transform: scale(1);
+	transition: all 0.5s ease;
+} */
+ /* Responsive design  */
+@media (max-width: 800px) {
+	.galleryWrapper {
+		transform: scale(0.6);
+	}
+}
+
+@media (max-width: 600px) {
+	.galleryWrapper {
+		display: block;
+		margin: 10px;
+	}
+}
+
+
+
+
+/* .photoFrame {
+	display: inline-block;
+	width: 80%;
+	background-color: white;
+	border: 3px solid lightgray;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+} */
+
+/* .gallery column {
+	float: left;
+	width: 33%;
+	padding: 8px;
+	height: 350%;
+	padding: 15px;
+}
+
+ clear floats after image containers 
+.gallery row::after {
+	content: "";
+	clear: both;
+	display: inline-block;
+}
+
+.photoDesc {
+	text-align: center;
+	padding: 15px;
+}
+
+.galleryResponsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.999%;
+}
+
+@media only screen and (max-width: 700px) {
+	.galleryResponsive {
+		width: 49.999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.galleryResponsive {
+		width: 100%;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+} */
