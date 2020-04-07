@@ -43,19 +43,19 @@ define({
   // time slider will show the current time as the end time and 2 days ago as the start. Note only valid if your dataset has
   // data for the specified dates.
   "futureDuration": false, // When true the start time is now and the duration is in the future
-  "durationTime": 3, // Number of duration period(s) to show (1, 2, 3, )
+  "durationTime": null, // Number of duration period(s) to show (1, 2, 3, )
   "durationPeriod": null, // weeks, days, months, hours etc
   "humanizeDuration": false, // When true duration is displayed in human terms like an hour ago
-  "tickTime": 3, // Number of tick period(s) to show (1, 2, 3 etc)
+  "tickTime": null, // Number of tick period(s) to show (1, 2, 3 etc)
   "tickPeriod": null, //"esriTimeUnitsDays", // break ticks into x days, years, weeks, hours, minutes
-  "thumbMovingRate": 3000, // set a custom thumb speed (milliseconds)
+  "thumbMovingRate": 1500, // set a custom thumb speed (milliseconds)
   "sliderticks": true, //display slider tics
   "looptime": true, //loop through time
   "refreshTime": false, // Set to true when using Live Data to add a refresh button that will update the time period
   "autoplay": true, //auto play the slider when app starts
   "noslider": true, //hide slider and play controls and just show time
   "intermediatechanges": true, // update map as the slider is moved. When false map doesn't update until slider thumb is dropped.
-  "timenav": false, //When true show the time navigation (next previous arrows)
+  "timenav": true, //When true show the time navigation (next previous arrows)
   //position time container. Valid values are  bottom-right,
   //bottom-left, bottom-center.
   "timeposition": "bottom-center",
