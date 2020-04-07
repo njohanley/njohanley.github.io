@@ -43,10 +43,10 @@ define({
   // time slider will show the current time as the end time and 2 days ago as the start. Note only valid if your dataset has
   // data for the specified dates.
   "futureDuration": false, // When true the start time is now and the duration is in the future
-  "durationTime": 3, // Number of duration period(s) to show (1, 2, 3, )
+  "durationTime": null, // Number of duration period(s) to show (1, 2, 3, )
   "durationPeriod": null, // weeks, days, months, hours etc
   "humanizeDuration": false, // When true duration is displayed in human terms like an hour ago
-  "tickTime": 3, // Number of tick period(s) to show (1, 2, 3 etc)
+  "tickTime": null, // Number of tick period(s) to show (1, 2, 3 etc)
   "tickPeriod": null //"esriTimeUnitsDays", // break ticks into x days, years, weeks, hours, minutes
   "thumbMovingRate": 1500, // set a custom thumb speed (milliseconds)
   "sliderticks": false, //display slider tics
