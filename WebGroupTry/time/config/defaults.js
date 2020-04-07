@@ -50,7 +50,7 @@ define({
   "tickPeriod": null //"esriTimeUnitsDays", // break ticks into x days, years, weeks, hours, minutes
   "thumbMovingRate": 1500, // set a custom thumb speed (milliseconds)
   "sliderticks": false, //display slider tics
-  "looptime": true, //loop through time
+  "looptime": false, //loop through time
   "refreshTime": false, // Set to true when using Live Data to add a refresh button that will update the time period
   "autoplay": false, //auto play the slider when app starts
   "noslider": false, //hide slider and play controls and just show time
