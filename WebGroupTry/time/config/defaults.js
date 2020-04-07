@@ -47,7 +47,7 @@ define({
   "durationPeriod": null, // weeks, days, months, hours etc
   "humanizeDuration": false, // When true duration is displayed in human terms like an hour ago
   "tickTime": 3, // Number of tick period(s) to show (1, 2, 3 etc)
-  "tickPeriod": , //"esriTimeUnitsDays", // break ticks into x days, years, weeks, hours, minutes
+  "tickPeriod": null, //"esriTimeUnitsDays", // break ticks into x days, years, weeks, hours, minutes
   "thumbMovingRate": 1500, // set a custom thumb speed (milliseconds)
   "sliderticks": false, //display slider tics
   "looptime": true, //loop through time
