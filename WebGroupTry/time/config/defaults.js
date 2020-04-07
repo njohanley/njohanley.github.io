@@ -38,7 +38,7 @@ define({
   "disableNav": false,
   "dateSeparator": "-", // TODO no sep option
   "singleLineDate": true, // when true start/end dates on single line
-  "customFormatOption": null,  // "dddd, MMMM Do YYYY, h:mm:ss a"
+  "customFormatOption": null, // "dddd, MMMM Do YYYY, h:mm:ss a"
   // Show date for specified time period. Time period starts from now and goes back the specified amount. So if you specify 2 days the
   // time slider will show the current time as the end time and 2 days ago as the start. Note only valid if your dataset has
   // data for the specified dates.
