@@ -38,16 +38,16 @@ define({
   "disableNav": false,
   "dateSeparator": "-", // TODO no sep option
   "singleLineDate": true, // when true start/end dates on single line
-  "customFormatOption":null,  // "dddd, MMMM Do YYYY, h:mm:ss a"
+  "customFormatOption": null,  // "dddd, MMMM Do YYYY, h:mm:ss a"
   // Show date for specified time period. Time period starts from now and goes back the specified amount. So if you specify 2 days the
   // time slider will show the current time as the end time and 2 days ago as the start. Note only valid if your dataset has
   // data for the specified dates.
   "futureDuration": false, // When true the start time is now and the duration is in the future
   "durationTime": 3, // Number of duration period(s) to show (1, 2, 3, )
-  "durationPeriod": years, // weeks, days, months, hours etc
+  "durationPeriod": null, // weeks, days, months, hours etc
   "humanizeDuration": false, // When true duration is displayed in human terms like an hour ago
   "tickTime": 3, // Number of tick period(s) to show (1, 2, 3 etc)
-  "tickPeriod": years, //"esriTimeUnitsDays", // break ticks into x days, years, weeks, hours, minutes
+  "tickPeriod": null, //"esriTimeUnitsDays", // break ticks into x days, years, weeks, hours, minutes
   "thumbMovingRate": 3000, // set a custom thumb speed (milliseconds)
   "sliderticks": true, //display slider tics
   "looptime": true, //loop through time
