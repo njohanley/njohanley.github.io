@@ -49,13 +49,13 @@ define({
   "tickTime": null, // Number of tick period(s) to show (1, 2, 3 etc)
   "tickPeriod": null, //"esriTimeUnitsDays", // break ticks into x days, years, weeks, hours, minutes
   "thumbMovingRate": 1500, // set a custom thumb speed (milliseconds)
-  "sliderticks": true, //display slider tics
-  "looptime": true, //loop through time
+  "sliderticks": false, //display slider tics
+  "looptime": false, //loop through time
   "refreshTime": false, // Set to true when using Live Data to add a refresh button that will update the time period
-  "autoplay": true, //auto play the slider when app starts
-  "noslider": true, //hide slider and play controls and just show time
+  "autoplay": false, //auto play the slider when app starts
+  "noslider": false, //hide slider and play controls and just show time
   "intermediatechanges": true, // update map as the slider is moved. When false map doesn't update until slider thumb is dropped.
-  "timenav": true, //When true show the time navigation (next previous arrows)
+  "timenav": false, //When true show the time navigation (next previous arrows)
   //position time container. Valid values are  bottom-right,
   //bottom-left, bottom-center.
   "timeposition": "bottom-center",
